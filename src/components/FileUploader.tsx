@@ -27,14 +27,14 @@ export function FileUploader({ onFileSelect, fileInputRef, handleDrop, handleDra
         type="file"
         ref={fileInputRef}
         onChange={handleFileChange}
-        accept="audio/*"
+        accept="audio/*,video/mp4,video/mov,video/*" // Allowing audio and video files
         className="hidden"
       />
       <div className="flex flex-col items-center gap-4">
         <Upload className="w-12 h-12 text-gray-400" />
         <div>
           <p className="text-lg font-medium text-gray-700">
-            Suelta tu archivo de audio aquí
+            Suelta tu archivo de audio o video aquí
           </p>
           <p className="text-sm text-gray-500">
             o haga click para seleccionar un archivo
